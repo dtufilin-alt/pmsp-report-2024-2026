@@ -309,3 +309,12 @@ section{padding:48px 0;scroll-margin-top:94px}
   .btn{width:100%}
   .crest{width:64px;height:64px}
 }
+
+/* Страницы разделов проекта */
+.section-toc h3{margin-bottom:14px}
+.section-toc .list a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.section-page-hero .panel{align-self:stretch}
+.metric-card .num{margin-bottom:16px}
+a.section-card{display:flex;color:inherit;transition:.18s ease}
+a.section-card:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0 rgba(31,32,40,.12), var(--shadow)}
+a.section-card:focus-visible,.btn:focus-visible,.menu a:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
