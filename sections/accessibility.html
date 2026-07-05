@@ -19,18 +19,5 @@
 </main>
 <footer class="footer"><div class="container">ФГБУ «ЦНИИОИЗ» Минздрава России · Публичный сайт проекта «Повышение результативности первичной медико-санитарной помощи» · 2024–2026</div></footer>
 
-<script>
-document.querySelectorAll('details.measure > summary').forEach(function(summary){
-  summary.addEventListener('click', function(event){
-    event.preventDefault();
-    var item = summary.parentElement;
-    if (item.hasAttribute('open')) {
-      item.removeAttribute('open');
-    } else {
-      item.setAttribute('open', '');
-    }
-  });
-});
-</script>
 </body>
 </html>
