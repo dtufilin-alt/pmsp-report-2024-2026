@@ -339,9 +339,19 @@ a.section-card:focus-visible,.btn:focus-visible,.menu a:focus-visible{outline:4p
 .method-note{margin-top:16px;padding:14px;border:1.5px dashed var(--ink);border-radius:14px;background:rgba(255,255,255,.62);color:#555961;position:relative;z-index:1}
 
 .measure-list{display:grid;gap:12px}
-.measure{border:1px solid rgba(32,37,45,.14);border-radius:18px;background:rgba(255,255,255,.78);overflow:hidden}
-.measure summary{cursor:pointer;list-style:none;padding:16px 48px 16px 18px;font-weight:800;color:#20252d;position:relative}
+.measure{--measure-color:var(--blue);border:1.5px solid rgba(32,37,45,.16);border-radius:18px;background:rgba(255,255,255,.82);overflow:hidden;box-shadow:0 8px 22px rgba(31,32,40,.05)}
+.measure:nth-child(6n+1){--measure-color:var(--blue)}
+.measure:nth-child(6n+2){--measure-color:var(--green)}
+.measure:nth-child(6n+3){--measure-color:var(--red)}
+.measure:nth-child(6n+4){--measure-color:var(--yellow)}
+.measure:nth-child(6n+5){--measure-color:var(--orange)}
+.measure:nth-child(6n+6){--measure-color:var(--violet)}
+.measure summary{cursor:pointer;list-style:none;display:block;padding:16px 54px 16px 58px;font-weight:850;color:#20252d;position:relative}
+.measure summary::marker{content:""}
 .measure summary::-webkit-details-marker{display:none}
-.measure summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:999px;background:#7fb3cf;color:#20252d;display:grid;place-items:center;font-weight:900}
+.measure summary:before{content:"";position:absolute;left:18px;top:50%;transform:translateY(-50%);width:24px;height:24px;border:2px solid var(--ink);border-radius:999px;background:var(--measure-color);box-shadow:4px 0 0 rgba(31,32,40,.10)}
+.measure summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:28px;height:28px;border:2px solid var(--ink);border-radius:999px;background:var(--measure-color);color:var(--ink);display:grid;place-items:center;font-weight:950;line-height:1}
 .measure[open] summary:after{content:"−"}
-.measure .list{padding:0 18px 18px 18px;margin-top:0}
+.measure .list{padding:0 18px 18px 58px;margin-top:0;gap:10px}
+.measure .list li{padding-left:34px}
+.measure .list li:before{content:"+";left:0;top:.08em;width:21px;height:21px;border-radius:999px;background:var(--measure-color);border:1.5px solid var(--ink);color:var(--ink);display:grid;place-items:center;font-size:15px;line-height:1;font-weight:950}
