@@ -18,5 +18,15 @@
 <section><div class="container"><div class="quote"><h2>Вывод по разделу</h2><p>Грамотность населения — это не информационный фон, а управленческий инструмент профилактики.</p><div class="actions"><a class="btn" href="../part1.html">Вернуться к разделам</a></div></div></div></section>
 </main>
 <footer class="footer"><div class="container">ФГБУ «ЦНИИОИЗ» Минздрава России · Публичный сайт проекта «Повышение результативности первичной медико-санитарной помощи» · 2024–2026</div></footer>
+
+<script>
+document.querySelectorAll('details.measure > summary').forEach(function(summary){
+  summary.addEventListener('click', function(event){
+    event.preventDefault();
+    var item = summary.parentElement;
+    item.toggleAttribute('open');
+  });
+});
+</script>
 </body>
 </html>
