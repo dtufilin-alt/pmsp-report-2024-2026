@@ -337,3 +337,11 @@ a.section-card:focus-visible,.btn:focus-visible,.menu a:focus-visible{outline:4p
 .method-card dt{font-weight:900;color:var(--ink)}
 .method-card dd{margin:0;color:#555961}
 .method-note{margin-top:16px;padding:14px;border:1.5px dashed var(--ink);border-radius:14px;background:rgba(255,255,255,.62);color:#555961;position:relative;z-index:1}
+
+.measure-list{display:grid;gap:12px}
+.measure{border:1px solid rgba(32,37,45,.14);border-radius:18px;background:rgba(255,255,255,.78);overflow:hidden}
+.measure summary{cursor:pointer;list-style:none;padding:16px 48px 16px 18px;font-weight:800;color:#20252d;position:relative}
+.measure summary::-webkit-details-marker{display:none}
+.measure summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:999px;background:#7fb3cf;color:#20252d;display:grid;place-items:center;font-weight:900}
+.measure[open] summary:after{content:"−"}
+.measure .list{padding:0 18px 18px 18px;margin-top:0}
