@@ -24,7 +24,11 @@ document.querySelectorAll('details.measure > summary').forEach(function(summary)
   summary.addEventListener('click', function(event){
     event.preventDefault();
     var item = summary.parentElement;
-    item.toggleAttribute('open');
+    if (item.hasAttribute('open')) {
+      item.removeAttribute('open');
+    } else {
+      item.setAttribute('open', '');
+    }
   });
 });
 </script>
