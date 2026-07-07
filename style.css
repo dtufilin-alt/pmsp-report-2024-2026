@@ -242,18 +242,14 @@ section{padding:48px 0;scroll-margin-top:94px}
 .pill{display:inline-flex;background:var(--beige);color:var(--ink);border-radius:999px;padding:6px 10px;font-size:13px;font-weight:800;margin-bottom:12px;border:1.5px solid var(--ink)}
 .region{text-align:center;border-radius:18px}
 .crest{
-  width:72px;height:72px;margin:0 auto 12px;
-  border-radius:50%;
+  width:56px;height:56px;margin:0;
+  object-fit:contain;
+  border-radius:12px;
   background:#fff;
-  border:3px solid var(--ink);
-  display:grid;place-items:center;
-  font-weight:900;color:var(--ink);
-  box-shadow:8px 0 0 rgba(31,32,40,.13);
+  border:2px solid rgba(31,32,40,.18);
+  padding:6px;
+  box-shadow:6px 0 0 rgba(31,32,40,.10);
 }
-.region:nth-child(4n+1) .crest{background:var(--blue)}
-.region:nth-child(4n+2) .crest{background:var(--green)}
-.region:nth-child(4n+3) .crest{background:var(--red)}
-.region:nth-child(4n+4) .crest{background:var(--gray)}
 
 .practice{border-left:8px solid var(--blue)}
 .practice:nth-child(4n+2){border-left-color:var(--green)}
@@ -313,7 +309,7 @@ section{padding:48px 0;scroll-margin-top:94px}
   .card,.panel{border-radius:16px;padding:18px}
   .head{display:block}
   .btn{width:100%}
-  .crest{width:64px;height:64px}
+  .crest{width:52px;height:52px}
 }
 
 /* Страницы разделов проекта */
@@ -326,7 +322,7 @@ a.section-card:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0 rgba(
 a.section-card:focus-visible,.btn:focus-visible,.menu a:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
 
 .section-page-hero .hero-grid{grid-template-columns:1fr}
-.region h3{display:flex;align-items:center;justify-content:center;gap:10px}.region .crest{margin:0 0 0 0;width:54px;height:54px;font-size:14px;flex:0 0 auto}.region p{clear:both}
+.region h3{display:flex;align-items:center;justify-content:center;gap:10px}.region .crest{flex:0 0 auto}.region p{clear:both}
 
 
 .step-link,.metric-link{color:inherit;text-decoration:none;display:block}
